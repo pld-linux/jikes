@@ -1,15 +1,15 @@
 Summary:	A Java source file to bytecode compiler
 Summary(pl):	Kompilator jêzyka Java
 Name:		jikes
-Version:	1.13
-Release:	2
+Version:	1.14
+Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages
 Group(de):	Entwicklung/Sprachen
 Group(pl):	Programowanie/Jêzyki
 Source0:	http://oss.software.ibm.com/pub/jikes/%{name}-%{version}.tar.gz
-Patch0:		%{name}-iconv.patch
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
+BuildRequires:	libstc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	guavac
 
@@ -28,7 +28,6 @@ information.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
