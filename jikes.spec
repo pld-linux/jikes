@@ -1,14 +1,13 @@
 Summary:	A Java source file to bytecode compiler
 Summary(es):	Compilador Java
-Summary(pl):	Kompilator jêzyka Java
+Summary(pl):	Kompilator jêzyka Java do bajtkodu
 Summary(pt_BR):	Compilador Java
 Name:		jikes
 Version:	1.22
 Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
-#Source0:	ftp://www-126.ibm.com/pub/jikes/%{version}/%{name}-%{version}.tar.bz2
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	ftp://www-126.ibm.com/pub/jikes/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	cda958c7fef6b43b803e1d1ef9afcb85
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
 BuildRequires:	automake
@@ -34,8 +33,8 @@ compilador rápido y que sigue estrictamente los patrones del lenguaje
 Java.
 
 %description -l pl
-Jikes z IBM Research to kompilator t³umacz±cy pliki ¼ród³owe Javy na
-bytecode. Jikes jest ¶ci¶le zgodny ze specyfikacj± jêzyka, ma bardzo
+Jikes z IBM Research to kompilator t³umacz±cy pliki ¼ród³owe Javy do
+bajtkodu. Jikes jest ¶ci¶le zgodny ze specyfikacj± jêzyka, ma bardzo
 du¿± szybko¶æ kompilacji i przemy¶lan± analizê zale¿no¶ci pozwalaj±c±
 na przyrostow± kompilacjê i automatyczne generowanie skryptów dla
 programu GNU Make.
