@@ -49,7 +49,7 @@ Java.
 
 %build
 cp -f /usr/share/automake/config.sub .
-CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
+CXXFLAGS="%{rpmcflags} -fno-exceptions"
 %configure
 %{__make}
 
