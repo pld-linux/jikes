@@ -4,13 +4,14 @@ Summary(pl):	Kompilator jêzyka Java
 Summary(pt_BR):	Compilador Java
 Name:		jikes
 Version:	1.18
-Release:	2
+Release:	3
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
 Source0:	ftp://www-126.ibm.com/pub/%{name}/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	74bbcfd31aa2d7df4b86c5fe2db315cc
 Patch0:		%{name}-NAN.patch
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	guavac
@@ -48,6 +49,7 @@ Java.
 #%patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.sub .
 CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
 %configure
 %{__make}
