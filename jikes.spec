@@ -32,7 +32,7 @@ information.
 %patch1 -p1
 
 %build
-CXXFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} -fno-exceptions -fno-rtti"
+CXXFLAGS="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS} -fno-exceptions -fno-rtti"
 %configure
 %{__make}
 
