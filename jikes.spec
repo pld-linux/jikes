@@ -2,7 +2,7 @@ Summary:	A Java source file to bytecode compiler
 Summary(pl):	Kompilator jêzyka Java
 Name:		jikes
 Version:	1.13
-Release:	1
+Release:	2
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages
 Group(de):	Entwicklung/Sprachen
