@@ -9,7 +9,7 @@ Group(de):	Entwicklung/Sprachen
 Group(pl):	Programowanie/Jêzyki
 Source0:	http://oss.software.ibm.com/pub/jikes/%{name}-%{version}.tar.gz
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
-BuildRequires:	libstc++-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	guavac
 
