@@ -7,7 +7,8 @@ Version:	1.21
 Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
-Source0:	ftp://www-126.ibm.com/pub/jikes/%{version}/%{name}-%{version}.tar.bz2
+#Source0:	ftp://www-126.ibm.com/pub/jikes/%{version}/%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	4e45eeab4c75918174e16ea2b695d812
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
 BuildRequires:	automake
