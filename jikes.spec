@@ -8,9 +8,6 @@ Group:		Development/Languages
 Group(de):	Entwicklung/Sprachen
 Group(pl):	Programowanie/Jêzyki
 Source0:	http://oss.software.ibm.com/pub/jikes/%{name}-%{version}.tar.gz
-#Patch0:		%{name}-gccbug.patch
-#Patch1:		%{name}-iconv.patch
-#Patch2:		%{name}-unconst.patch
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	guavac
@@ -30,9 +27,6 @@ information.
 
 %prep
 %setup -q
-#%patch0 -p1
-#%patch1 -p1
-#%patch2 -p1
 
 %build
 CXXFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -fno-exceptions -fno-rtti"
