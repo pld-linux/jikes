@@ -4,7 +4,7 @@ Summary(pl):	Kompilator jêzyka Java
 Summary(pt_BR):	Compilador Java
 Name:		jikes
 Version:	1.15
-Release:	2
+Release:	3
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
 Source0:	http://oss.software.ibm.com/pub/jikes/%{name}-%{version}.tar.gz
@@ -44,7 +44,7 @@ Java.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
@@ -57,13 +57,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/jikes
 %{_mandir}/man1/jikes.1*
