@@ -4,9 +4,9 @@ Name:		jikes
 Version:	1.14
 Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
-Group:		Development/Languages
-Group(de):	Entwicklung/Sprachen
-Group(pl):	Programowanie/Jêzyki
+Group:		Development/Languages/Java
+Group(de):	Entwicklung/Sprachen/Java
+Group(pl):	Programowanie/Jêzyki/Java
 Source0:	http://oss.software.ibm.com/pub/jikes/%{name}-%{version}.tar.gz
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
 BuildRequires:	libstdc++-devel
