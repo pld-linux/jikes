@@ -9,9 +9,8 @@ Group(de):	Entwicklung/Sprachen
 Group(pl):	Programowanie/Jêzyki
 Source0:	http://OSS.Software.IBM.Com/developerworks/opensource/jikes/project/pub/%{name}-%{version}.tar.gz
 Patch0:		%{name}-gccbug.patch
-Patch1:		%{name}-gcc296.patch
-Patch2:		%{name}-iconv.patch
-Patch3:		%{name}-unconst.patch
+Patch1:		%{name}-iconv.patch
+Patch2:		%{name}-unconst.patch
 URL:		http://OSS.Software.IBM.Com/developerworks/opensource/jikes/project/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	guavac
@@ -34,7 +33,6 @@ information.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
 
 %build
 CXXFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -fno-exceptions -fno-rtti"
