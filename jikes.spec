@@ -2,16 +2,19 @@ Summary:	A Java source file to bytecode compiler
 Summary(pl):	Kompilator jêzyka Java
 Name:		jikes
 Version:	1.12
-Release:	2
-Copyright:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
+Release:	3
+License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages
 Group(de):	Entwicklung/Sprachen
 Group(pl):	Programowanie/Jêzyki
 Source0:	http://OSS.Software.IBM.Com/developerworks/opensource/jikes/project/pub/%{name}-%{version}.tar.gz
 Patch0:		%{name}-gccbug.patch
 Patch1:		%{name}-gcc296.patch
+Patch2:		%{name}-iconv.patch
+Patch3:		%{name}-unconst.patch
 URL:		http://OSS.Software.IBM.Com/developerworks/opensource/jikes/project/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	guavac
 
 %description
 The IBM Research Jikes compiler translates Java source files into
@@ -30,6 +33,8 @@ information.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
+%patch3 -p1
 
 %build
 CXXFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -fno-exceptions -fno-rtti"
