@@ -7,14 +7,13 @@ Version:	1.21
 Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
-Source0:	ftp://www-126.ibm.com/pub/%{name}/%{version}/%{name}-%{version}.tar.bz2
+Source0:	ftp://www-126.ibm.com/pub/jikes/%{version}/%{name}-%{version}.tar.bz2
 # Source0-md5:	4e45eeab4c75918174e16ea2b695d812
-Patch0:		%{name}-NAN.patch
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	guavac
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The IBM Research Jikes compiler translates Java source files into
@@ -46,7 +45,6 @@ Java.
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
@@ -65,6 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc AUTHORS NEWS README TODO doc/license.htm
 %attr(755,root,root) %{_bindir}/jikes
+%{_includedir}/jikesapi.h
 %{_mandir}/man1/jikes.1*
