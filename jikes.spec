@@ -36,7 +36,8 @@ Java.
 Jikes z IBM Research to kompilator t³umacz±cy pliki ¼ród³owe Javy na
 bytecode. Jikes jest ¶ci¶le zgodny ze specyfikacj± jêzyka, ma bardzo
 du¿± szybko¶æ kompilacji i przemy¶lan± analizê zale¿no¶ci pozwalaj±c±
-n przyrostow± kompilacjê i automatyczne generowanie makefile.
+na przyrostow± kompilacjê i automatyczne generowanie skryptów dla
+programu GNU Make.
 
 %description -l pt_BR
 Jikes (TM) é um compilador de fontes Java para bytecode. É um
