@@ -3,11 +3,11 @@ Summary(es):	Compilador Java
 Summary(pl):	Kompilator jêzyka Java
 Summary(pt_BR):	Compilador Java
 Name:		jikes
-Version:	1.15
-Release:	3
+Version:	1.16
+Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
-Source0:	http://oss.software.ibm.com/pub/jikes/%{name}-%{version}.tar.gz
+Source0:	ftp://www-126.ibm.com/pub/jikes/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-NAN.patch
 URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
 BuildRequires:	libstdc++-devel
