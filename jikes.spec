@@ -32,11 +32,10 @@ compilador rápido y que sigue estrictamente los patrones del lenguaje
 Java.
 
 %description -l pl
-Jikes z IBM Research to kompilator t³umacz±cy pliki ¼ród³owe Javy
-na bytecode. Jikes jest ¶ci¶le zgodny ze specyfikacj± jêzyka, ma
-bardzo du¿± szybko¶æ kompilacji i przemy¶lan± analizê zale¿no¶ci
-pozwalaj±c± n przyrostow± kompilacjê i automatyczne generowanie
-makefile.
+Jikes z IBM Research to kompilator t³umacz±cy pliki ¼ród³owe Javy na
+bytecode. Jikes jest ¶ci¶le zgodny ze specyfikacj± jêzyka, ma bardzo
+du¿± szybko¶æ kompilacji i przemy¶lan± analizê zale¿no¶ci pozwalaj±c±
+n przyrostow± kompilacjê i automatyczne generowanie makefile.
 
 %description -l pt_BR
 Jikes (TM) é um compilador de fontes Java para bytecode. É um
