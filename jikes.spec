@@ -1,7 +1,9 @@
 Summary:	A Java source file to bytecode compiler
+Summary(es):	Compilador Java
 Summary(pl):	Kompilator jêzyka Java
+Summary(pt_BR):	Compilador Java
 Name:		jikes
-Version:	1.14
+Version:	1.15
 Release:	1
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
@@ -23,8 +25,17 @@ automatic makefile generation.
 The release of Jikes' source code in December 1998 initiated one of
 IBM's first efforts in the open source arena, and since that time
 Jikes has been maintained and refined using the open source
-development model. See http://ibm.com/research/jikes for more
-information.
+development model.
+
+%description -l es
+Jikes (TM) es un compilador de fuentes Java para bytecode. Es un
+compilador rápido y que sigue estrictamente los patrones del lenguaje
+Java.
+
+%description -l pt_BR
+Jikes (TM) é um compilador de fontes Java para bytecode. É um
+compilador rápido e que segue estritamente os padrões da linguagem
+Java.
 
 %prep
 %setup -q
@@ -36,13 +47,9 @@ CXXFLAGS="%{rpmcflags} -fno-exceptions -fno-rtti"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_mandir}/man1
 
-%{__make} install -C src \
-	bindir=$RPM_BUILD_ROOT%{_bindir} \
-	mandir=$RPM_BUILD_ROOT%{_mandir}
-
-install doc/jikes.1 $RPM_BUILD_ROOT%{_mandir}/man1
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README
 
@@ -51,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.html
+%doc *.gz
 %attr(755,root,root) %{_bindir}/jikes
 %{_mandir}/man1/jikes.1*
