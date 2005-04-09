@@ -4,12 +4,13 @@ Summary(pl):	Kompilator jêzyka Java do bajtkodu
 Summary(pt_BR):	Compilador Java
 Name:		jikes
 Version:	1.22
-Release:	1
+Release:	2
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
-Source0:	ftp://www-126.ibm.com/pub/jikes/%{version}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/jikes/%{name}-%{version}.tar.bz2
 # Source0-md5:	cda958c7fef6b43b803e1d1ef9afcb85
-URL:		http://oss.software.ibm.com/developerworks/opensource/jikes/
+Patch0:		%{name}-source-1.2.patch
+URL:		http://jikes.sourceforge.net/
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 Obsoletes:	guavac
@@ -46,6 +47,7 @@ Java.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
