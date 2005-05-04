@@ -4,7 +4,7 @@ Summary(pl):	Kompilator jêzyka Java do bajtkodu
 Summary(pt_BR):	Compilador Java
 Name:		jikes
 Version:	1.22
-Release:	2
+Release:	3
 License:	IBM Public License Version 1.0 - Jikes Compiler, http://ibm.com/research/jikes/license/license3.htm
 Group:		Development/Languages/Java
 Source0:	http://dl.sourceforge.net/jikes/%{name}-%{version}.tar.bz2
