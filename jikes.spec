@@ -52,7 +52,8 @@ Java.
 %build
 cp -f /usr/share/automake/config.sub .
 
-%configure
+%configure \
+	--enable-source15
 %{__make}
 
 %install
