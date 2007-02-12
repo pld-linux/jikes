@@ -1,7 +1,7 @@
 Summary:	A Java source file to bytecode compiler
-Summary(es):	Compilador Java
-Summary(pl):	Kompilator jêzyka Java do bajtkodu
-Summary(pt_BR):	Compilador Java
+Summary(es.UTF-8):   Compilador Java
+Summary(pl.UTF-8):   Kompilator jÄ™zyka Java do bajtkodu
+Summary(pt_BR.UTF-8):   Compilador Java
 Name:		jikes
 Version:	1.22
 Release:	3
@@ -28,21 +28,21 @@ IBM's first efforts in the open source arena, and since that time
 Jikes has been maintained and refined using the open source
 development model.
 
-%description -l es
+%description -l es.UTF-8
 Jikes (TM) es un compilador de fuentes Java para bytecode. Es un
-compilador rápido y que sigue estrictamente los patrones del lenguaje
+compilador rÃ¡pido y que sigue estrictamente los patrones del lenguaje
 Java.
 
-%description -l pl
-Jikes z IBM Research to kompilator t³umacz±cy pliki ¼ród³owe Javy do
-bajtkodu. Jikes jest ¶ci¶le zgodny ze specyfikacj± jêzyka, ma bardzo
-du¿± szybko¶æ kompilacji i przemy¶lan± analizê zale¿no¶ci pozwalaj±c±
-na przyrostow± kompilacjê i automatyczne generowanie skryptów dla
+%description -l pl.UTF-8
+Jikes z IBM Research to kompilator tÅ‚umaczÄ…cy pliki ÅºrÃ³dÅ‚owe Javy do
+bajtkodu. Jikes jest Å›ciÅ›le zgodny ze specyfikacjÄ… jÄ™zyka, ma bardzo
+duÅ¼Ä… szybkoÅ›Ä‡ kompilacji i przemyÅ›lanÄ… analizÄ™ zaleÅ¼noÅ›ci pozwalajÄ…cÄ…
+na przyrostowÄ… kompilacjÄ™ i automatyczne generowanie skryptÃ³w dla
 programu GNU Make.
 
-%description -l pt_BR
-Jikes (TM) é um compilador de fontes Java para bytecode. É um
-compilador rápido e que segue estritamente os padrões da linguagem
+%description -l pt_BR.UTF-8
+Jikes (TM) Ã© um compilador de fontes Java para bytecode. Ã‰ um
+compilador rÃ¡pido e que segue estritamente os padrÃµes da linguagem
 Java.
 
 %prep
