@@ -1,7 +1,7 @@
 Summary:	A Java source file to bytecode compiler
-Summary(es.UTF-8):   Compilador Java
-Summary(pl.UTF-8):   Kompilator języka Java do bajtkodu
-Summary(pt_BR.UTF-8):   Compilador Java
+Summary(es.UTF-8):	Compilador Java
+Summary(pl.UTF-8):	Kompilator języka Java do bajtkodu
+Summary(pt_BR.UTF-8):	Compilador Java
 Name:		jikes
 Version:	1.22
 Release:	3
